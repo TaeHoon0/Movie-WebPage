@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>명작 영화, 다시 보면 더욱 큰 감동이</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Jua&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./movie_style.css">
+</head>
+<body>
+	<div id="wrap">
+		<header class="header">
+			<div class="logo">Movie Maps</div>
+			<div class="member">
+				<ul>
+					<li><a href="#">로그인</a></li>
+					<li><a href="#">회원 가입</a></li>
+					<li><a href="#">내 정보</a></li>
+					<li><a href="#">고객 센터</a></li>
+				</ul>
+			</div>
+			<div class="searchArea">
+				<input type="search" placeholder="영화를 검색하세요" />
+				<img class="searchBtn" src="search.png"/>
+			</div>
+		</header>
+		
+		<div class="recommend">
+			<div> 3월의 추천 영화 </div>
+			<div class="recommendslideWrap">
+				<ul class="recommendImgWrap"> 
+					<li><img class="recommendPoster" src="posters/amelie.jpg"></li>
+					<li><img class="recommendPoster" src="posters/blackswan.jpg"></li>
+					<li><img class="recommendPoster" src="posters/godfather.jpg"></li>
+					<li><img class="recommendPoster" src="posters/greenknight.jpg"></li>
+					<li><img class="recommendPoster" src="posters/her.jpg"></li>
+					<li><img class="recommendPoster" src="posters/lambs.jpg"></li>
+					<li><img class="recommendPoster" src="posters/moonlight.jpg"></li>
+					<li><img class="recommendPoster" src="posters/pulpfiction.jpg"></li>
+					<li><img class="recommendPoster" src="posters/roma.jpg"></li>
+					<li><img class="recommendPoster" src="posters/trumanshow.jpg"></li>
+				</ul>
+			</div>
+			
+			<div class="slideNav">
+				<span class="prev">이전</span>
+				<span class="control">일시정지</span>
+				<span class="next">다음</span>				
+			</div>
+		</div>
+		
+		<div class="movieChart">
+			<div class="chartWrap">
+				<div class="chartHead">
+					<span>Movie Chart</span>
+					<span>더보기 ></span>
+				</div>		
+				<ul>
+					<li class="chartRank" onmouseover="rankmouseOn(0)" onmouseout="rankmouseOut(0)">
+						<img class="chartPoster" src="posters/wonderfullife.jpg">
+						<span class="chartBtn">감상하기</span>
+						<span class="movieRank">1</span>
+					</li>
+					<li class="chartRank" onmouseover="rankmouseOn(1)" onmouseout="rankmouseOut(1)">
+						<img class="chartPoster" src="posters/eternalsunshine.jpg">
+						<span class="chartBtn">감상하기</span>
+						<span class="movieRank">2</span>
+					</li>
+					<li class="chartRank" onmouseover="rankmouseOn(2)" onmouseout="rankmouseOut(2)">
+						<img class="chartPoster" src="posters/moodindigo.jpg">
+						<span class="chartBtn">감상하기</span>
+						<span class="movieRank">3</span>
+					</li>
+					<li class="chartRank" onmouseover="rankmouseOn(3)" onmouseout="rankmouseOut(3)">
+						<img class="chartPoster" src="posters/cinemaparadise.jpg">
+						<span class="chartBtn">감상하기</span>
+						<span class="movieRank">4</span>
+					</li>
+					<li class="chartRank" onmouseover="rankmouseOn(4)" onmouseout="rankmouseOut(4)">
+						<img class="chartPoster" src="posters/mebeforeyou.jpg">
+						<span class="chartBtn">감상하기</span>
+						<span class="movieRank">5</span>
+					</li>
+				</ul>			
+			</div>
+
+		</div>
+		
+		<div class="event">
+			<div>Event</div>
+			<div class="eventSlideWrap">
+				<ul class="eventImgWrap">
+					<li class="eventImg"></li>
+					<li class="eventImg"></li>
+					<li class="eventImg"></li>
+					<li class="eventImg"></li>
+					<li class="eventImg"></li>
+					<li class="eventImg"></li>
+				</ul>
+				
+			</div>
+			<div class="eventSlideBtnWrap">
+				<img class="eventPrevBtn eventSlideBtn" src="prev.png" />
+				<img class="eventNextBtn eventSlideBtn" src="next.png" />
+			</div>
+		</div> 
+		
+		
+		<div class="review">
+			<div>review</div>
+			<ul class="reviewWrap">
+				<li>
+					<div>
+						<img class="reviewPoster" src="posters/abouttime.jpg">
+						<div class="reviewMovieName">ABOUT TIME</div>	
+						<div class="ratingWrap">
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+						</div>
+						<div class="reviewComment">
+							<div>ID : af*****</div>
+							<div> 
+								결과적으로.. 시간을 되돌아가서 상황을 바꾸는 것이 아니라, 그 상황을 대하는 
+								마음가짐을 바꾸게 되면서 인생을 순리대로 살아가는.. <br/>
+								그래서 아버지도 결국 보내게 되는거고.. 
+								아 뭐라 하나만 콕 짚어서 말하기엔 어려울정도로 많은걸 느끼게 한 영화.
+							</div>
+						</div>	
+					</div>
+				</li>
+				<li>
+					<div>
+						<img class="reviewPoster" src="posters/lalaland.jpg">
+						<div class="reviewMovieName">LALA LAND</div>	
+						<div class="ratingWrap">
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="half.png" />
+						</div>
+						<div class="reviewComment">
+							<div>ID : ki*******</div>
+							<div> 
+								 아이러니컬하게도, 꿈이라는 건 이루고 난 뒤보다 이루기 전까지가 실은 가장 행복했다는 걸, <br/>
+								 이루고 난 뒤에야 깨닫는다는 인생의 진실을 가슴 아프게 그리고 아름답게 보여주는 영화
+							</div>
+						</div>	
+					</div>
+				</li>
+				<li>
+					<div>
+						<img class="reviewPoster" src="posters/budapesthotel.jpg">
+						<div class="reviewMovieName">GRAND BUDAPEST HOTEL</div>	
+						<div class="ratingWrap">
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="rating.png" />
+							<img class="rating" src="half.png" />
+						</div>
+						<div class="reviewComment">
+							<div>ID : le*********</div>
+							<div> 
+								감독 특유의 색상 감각이 잘 살아있습니다. 줄거리도 흥미진진해서 긴장을 늦출 수 없었어요. <br/>
+								제로 역을 맡은 아이가 누군진 모르겠지만 귀엽고 연기도 잘 하더군요.
+							</div>
+						</div>	
+					</div>
+				</li>	
+			</ul>
+		</div>
+		
+		<footer class="footer">
+			<div>
+				<div><img src="punch.png" class="punch"></div>
+				<div>
+				CEO. 꿀 주 먹 
+	            <br/>Addr. 인천시 계양구 --- --- ---
+	            <br/>Fax/Tel. 032 - 000 -0001~3 
+	            <br/>COPYRIGHT 2022. HoneyPunch. ALL RIGHT RESERVED.
+				</div>
+			</div>
+			
+		</footer>
+	</div>
+	
+	
+	<script src="movie.js"></script>
+</body>
+</html>
