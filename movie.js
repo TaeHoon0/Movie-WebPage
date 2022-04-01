@@ -63,6 +63,7 @@ function setEventSlideSize(){
 		eventImgWrapWidth += eventImg[i].offsetWidth + 40;
 	}
 	eventImgWrap.style.width = eventImgWrapWidth + 'px';
+	eventImgWrap.style.transition = 'transform 0.5s ease-out';
 }
 
 eventPrevBtn.onclick = function(){
@@ -89,12 +90,10 @@ eventNextBtn.onclick = function(){
 // 차트 이미지에 마우스 올렸을 때
 function rankmouseOn(rankIndex){
 	chartPoster[rankIndex].style.opacity = 0.3;
-	chartBtn[rankIndex].style.opacity = 1;
-	chartBtn[rankIndex].style.cursor = 'pointer';
+	chartBtn[rankIndex].style.visibility = 'visible';
 }
 
 function rankmouseOut(rankIndex){
 	chartPoster[rankIndex].style.opacity = 1;
-	chartBtn[rankIndex].style.opacity = 0;
-	chartBtn[rankIndex].style.cursor = 'default';	
+	chartBtn[rankIndex].style.visibility = 'hidden';
 }

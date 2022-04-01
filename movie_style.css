@@ -205,7 +205,8 @@ a:hover{
 	border-radius: 8px;
 	border: none;
 	box-shadow: 0 0 1px #aaa;
-	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
 }
 .movieChart > .chartWrap > ul > .chartRank > .movieRank{
 	font-family: 'Jua', sans-serif;
@@ -234,7 +235,6 @@ a:hover{
 }
 .eventSlideWrap > .evnetImgWrap{
  	display: flex;	
- 	transition: left 0.5s ease-out;
 }
 .eventSlideWrap > .eventImgWrap > .eventImg{
 	width: 400px;
